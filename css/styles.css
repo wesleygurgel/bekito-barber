@@ -286,16 +286,33 @@ banner section
 }
 
 .header ul li a {
+    position: relative; /* Adicionado para posicionar o pseudo-elemento */
     display: block;
-    font-weight:400;
-    font-size: 12px;
+    font-weight: 400;
+    font-size: 13px;
     line-height: 16px;
     color: #ffffff;
+	text-decoration: none; /* Adicionado para remover o sublinhado */
     text-transform: uppercase;
     transition: all ease 0.5s;
     padding-bottom: 3px;
     letter-spacing: 0.2px;
-	font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald', sans-serif;
+}
+
+.header ul li a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #917758;
+    transition: width 0.5s ease;
+}
+
+.header ul li a:hover::before, .header ul li.active a::before {
+    width: 100%;
 }
 
 .header ul li a:hover, .header ul li.active a {
@@ -303,8 +320,9 @@ banner section
 }
 
 .header ul li.active a {
-    border-bottom: 1px solid #917758;
+    border-bottom: 1px solid #917758; /* Pode remover essa linha caso queira usar o efeito de transição */
 }
+
 
 .logo {
     text-align: center;
@@ -2797,20 +2815,24 @@ scroll to top
 -----------------------------------------------------------------------------------*/
 
 .scroll-top {
-  background: #ffffff url("../images/logo-angle-right.png") no-repeat center center;
-  bottom: 20px;
-  font-size: 0;
-  height: 40px;
-  position: fixed;
-  right: 15px;
-  width: 40px;
-  transform: rotate(-90deg);
-  -webkit-transform: rotate(-90deg);
-  display: none;
+    background: #917758 url("../images/scroll-top.png") no-repeat center center;
+    bottom: 20px;
+    font-size: 0;
+    height: 40px;
+    position: fixed;
+    right: 15px;
+    width: 40px;
+    border-radius: 50%;
+    transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    display: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra sutil */
 }
+
 .scroll-top:hover {
-    background-color: #000000;
+    background-color: #a5886c;
+    box-shadow: 0px 0px 15px
 }
+
 
 
 /*-----------------------------------------------------------------------------------
