@@ -330,7 +330,6 @@ banner section
     margin: 0 auto;
 }
 
-
 .header .table-cell {
     width: 432px;
 }
@@ -339,6 +338,7 @@ banner section
   max-width: 100%;
   text-align: left;
   width: 134px;
+  /* border: 1px solid red; */
 }
 
 .banner-text {
@@ -350,6 +350,11 @@ banner section
     top: 50%;
     left: 0;
     right: 0;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.banner-text a {
+	text-shadow: none;
 }
 
 .banner-slide-show-wrapper {
@@ -535,6 +540,7 @@ About us
 	letter-spacing:1px;
 	font-weight:normal;
 	line-height:1.5;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .border-left-right {
