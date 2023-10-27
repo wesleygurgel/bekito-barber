@@ -1790,51 +1790,13 @@ Appointment
 	bottom:-10px;
 }
 
+.hours-text {
+	color: #d19d64;
+}
+
 .make-appointment-right-section .heading-title {
     font-size:30px;
 	margin-bottom:45px;
-}
-
-.make-appointment-form {
-	float:left;
-	width:100%;
-}
-
-.appointment-form-field {
-	float:left;
-	width:100%;
-	margin-bottom:10px;
-	position:relative;
-}
-
-
-
-.appointment-form-field input[type="text"], .appointment-form-field input[type="email"], .appointment-form-field textarea {
-	font-size: 14px;
-	line-height: 16px;
-	position: relative;
-	background:none;
-	border:#FFFFFF solid 1px;
-	height: 40px;
-	width: 100%;
-	padding: 0 15px;
-	border-radius: 0;
-	box-shadow: none;
-	color:#676767;
-}
-
-.appointment-form-field select {
-	font-size: 14px;
-	line-height: 16px;
-	position: relative;
-	background:none;
-	border:#FFFFFF solid 1px;
-	height: 40px;
-	width: 100%;
-	padding: 0 15px;
-	border-radius: 0;
-	box-shadow: none;
-	color:#676767;
 }
 
 .appointment-calender {
@@ -1854,28 +1816,6 @@ Appointment
 .appointment-submit-field {
 	width: 100%;
 	text-align: right;
-}
-
-.appointment-form-field input[type="submit"] {
-	cursor: pointer;
-	background: #000000;
-	font-size: 13px;
-	line-height: 45px;
-	height: 45px;
-	text-transform: uppercase;
-	font-weight:700;
-	border: none;
-	width: 100%;
-	color: #d19d64;
-	font-family: 'Oswald', sans-serif;
-	letter-spacing:1px;
-	margin:40px 0 0 0;
-}
-
-.appointment-form-field input[type="submit"]:hover {
-	background: #FFFFFF;
-	color:#000000;
-	transition:all ease .5s;
 }
 
 .make-appointment:after {
@@ -1938,24 +1878,6 @@ Appointment
 .appointment-cell.active span, .appointment-inner.current span {
 	color: #ffffff;
 	background-color: #917758;
-}
-
-.appointment-form {
-	margin-top: 55px;
-	position: relative;
-	z-index: 99;
-}
-
-.appointment-form p {
-	font-size: 16px;
-	line-height: 20px;
-	font-weight: 600;
-	margin-bottom: 29px;
-	color: #ffffff;
-}
-
-.appointment-form-wrapper {
-	margin: 0 -10px;
 }
 
 .form-field label {
@@ -2032,35 +1954,54 @@ Appointment
 }
 	
 
+/* Estilo da box centralizada */
 .make-appointment-hours-section {
-	float:left;
-	width:100%;
+    background-color: #ffffff;
+    width: 60%;
+    border-radius: 10px;
+    padding: 20px 40px;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    position: relative;
+    top: 50%; /* Centraliza verticalmente */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); /* Sombra para dar aspecto de elevação */
+}
+
+.make-appointment-heading {
+	background-color: #d19d64; /* cor de fundo do título */
+    color: #000000; /* cor do texto do título */
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px 10px 0 0; /* Arredonda apenas os cantos superiores */
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.hours-list {
+    list-style-type: none; /* Remove os pontos padrões da lista */
+    padding: 0;
 }
 
 .hours-list li {
-	color: #bdbdbd;
-	list-style-type: none;
-	margin-bottom: 55px;
-	border-bottom: 2px dotted #898989;
-	font-size: 16px;
-	text-transform: uppercase;
-	font-weight: 400;
-	font-family: 'Oswald', sans-serif;
-
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #d0d0d0;
+    display: flex;
+    justify-content: space-between;
+	color: black;
 }
 
-.hours-list li span {
-	background: #000;
-	position: relative;
-	top: 5px;
-	padding: 0 5px;
-	display: inline-block;
+.day-different {
+	background-color: #cfa67a !important;
 }
 
-.hours-list li span:last-child {
-	float: right;
+.hours-list li:last-child {
+    border-bottom: none; /* Remove a borda do último item */
 }
 
+.hours-text {
+    font-weight: bold;
+	color: black;
+}
 
 
 /*-----------------------------------------------------------------------------------
@@ -2528,15 +2469,12 @@ Contact us
 }
 
 .map-img iframe {
-     webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
 	width:100%;
 	height:400px;
 }
 
 .map-img:after {
 	content: "";
-	background: url("../images/loc-big.png") no-repeat center center;
 	position: absolute;
 	top: 90px;
 	left: 0;
