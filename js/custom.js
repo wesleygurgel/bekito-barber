@@ -205,17 +205,14 @@
         
         $(window).scroll(function () {
             if ($(this).scrollTop() > 100) {
-                $('.scroll-top').fadeIn();
+                $('.whatsapp-button').fadeIn();
             } else {
-                $('.scroll-top').fadeOut();
+                $('.whatsapp-button').fadeOut();
             }
         });
 
-        $('.scroll-top').on('click',function() {
-            $("html, body").animate({
-                scrollTop: 0
-            }, 600);
-            return false;
+        $('.whatsapp-button').on('click',function() {
+            window.location.href = 'https://wa.me/5584988614565?text=%2AOl%C3%A1%2C%2A+gostaria+de+agendar+um+hor%C3%A1rio';
         });
         $('.play-btn').on('click',function() {
 	    	$('.video-popup').show();
