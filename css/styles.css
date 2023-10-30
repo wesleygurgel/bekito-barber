@@ -1063,7 +1063,8 @@ Testimonial
 -----------------------------------------------------------------------------------*/
 
 .client-testimonial {
-	background:url(../images/testimonial-bg.jpg) top center no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/depoimento-banner.jpg) top center no-repeat;
+	background-size: cover;
 	padding-top: 100px;
 	padding-bottom: 115px;
 	text-align: center;
@@ -1084,7 +1085,6 @@ Testimonial
 	width: 100%;
 	margin: 0 auto;
 	padding: 20px 10px 105px;
-	box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.1);
 	border-radius: 3px;
 }
 
@@ -1434,6 +1434,9 @@ Tab Style pricing
 }
 
 .cta-box-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .cta-appoint-btn {
@@ -1451,6 +1454,7 @@ Tab Style pricing
 	height: 45px;
 	font-family: 'Oswald', sans-serif;
 	text-decoration:none;
+	margin-top: 30px;
 }
 
 
@@ -1540,7 +1544,7 @@ Box Style pricing
 -----------------------------------------------------------------------------------*/
 
 .our-pricing {
-	background: url("../images/price-banner.jpg") no-repeat top center;
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/our-pricing-2.jpg") no-repeat top center;
 	background-size: cover;
 	padding-top: 107px;
 	padding-bottom: 107px;
@@ -2395,7 +2399,7 @@ Contact us
 
 -----------------------------------------------------------------------------------*/
 .map-banner {
-	background: url("../images/map-banner.jpg") no-repeat top center;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/map-banner2.jpg") no-repeat bottom center;
 	background-size: cover;
 	padding-bottom: 110px;
 	padding-top: 110px;
@@ -3694,7 +3698,5 @@ h2 {
 	font-size:10px;
 	letter-spacing:0;
 }
-
-
 
 }
