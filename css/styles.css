@@ -307,7 +307,7 @@ banner section
     left: 0;
     width: 0;
     height: 1px;
-    background: #917758;
+    background: #000000;
     transition: width 0.5s ease;
 }
 
@@ -316,7 +316,7 @@ banner section
 }
 
 .header ul li a:hover, .header ul li.active a {
-    color: #917758;
+    color: #000000;
 }
 
 .header ul li.active a {
