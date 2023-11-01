@@ -289,7 +289,7 @@ banner section
     position: relative; /* Adicionado para posicionar o pseudo-elemento */
     display: block;
     font-weight: 400;
-    font-size: 13px;
+    font-size: 16px;
     line-height: 16px;
     color: #ffffff;
 	text-decoration: none; /* Adicionado para remover o sublinhado */
@@ -337,8 +337,12 @@ banner section
 .logo.table-cell {
   max-width: 100%;
   text-align: left;
-  width: 134px;
-  /* border: 1px solid red; */
+  width: 80px;
+  padding-left: 10px;
+}
+
+.menu.table-cell {
+	padding-left: 50px;
 }
 
 .banner-text {
@@ -432,7 +436,7 @@ banner slider css
   position: absolute;
   right: 0;
   top: 0;
-  background:rgba(0, 0, 0, 0.6);
+  background:rgba(209, 157, 100, 0.6);
   padding-bottom:20px;
 }
 
@@ -1388,6 +1392,15 @@ Tab Style pricing
 	display:inline-block;
 }
 
+.price-list-service-partir {
+	font-family: 'Oswald', sans-serif;
+	font-size:20px;
+	text-transform:uppercase;
+	text-align:right;
+	color:#d19d64;
+	margin-top:-30px;
+}
+
 .price-list-service-price {
 	font-family: 'Oswald', sans-serif;
 	font-size:20px;
@@ -1962,7 +1975,7 @@ Appointment
 /* Estilo da box centralizada */
 .make-appointment-hours-section {
     background-color: #ffffff;
-    width: 60%;
+    width: 90%;
     border-radius: 10px;
     padding: 20px 40px;
     margin: 0 auto; /* Centraliza horizontalmente */
@@ -2845,6 +2858,7 @@ Responsive CSS
 .header-align-left .menu.table-cell {
   width: auto;
   padding-left: 50px;
+  top: 130px;
 }
 }
 
@@ -3203,7 +3217,6 @@ Responsive CSS
 }
 
 .slider-header .mobile-ic, .mobile-ic {
-    top: 19px;
 	right:25px;
 }
 
