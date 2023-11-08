@@ -307,7 +307,7 @@ banner section
     left: 0;
     width: 0;
     height: 1px;
-    background: #000000;
+    background: #D19D64;
     transition: width 0.5s ease;
 }
 
@@ -316,7 +316,7 @@ banner section
 }
 
 .header ul li a:hover, .header ul li.active a {
-    color: #000000;
+    color: #D19D64;
 }
 
 .header ul li.active a {
@@ -369,8 +369,8 @@ banner section
     display: block;
     font-weight:normal;
     color: #FFFFFF;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 24px;
+    line-height: 70px;
     text-transform: uppercase;
     letter-spacing: 4.2px;
 	font-family: 'Oswald', sans-serif;
@@ -378,7 +378,7 @@ banner section
 
 .banner-text h1 {
   color: #ffffff;
-  font-size: 110px;
+  font-size: 90px;
   font-weight: 600;
   line-height: 116px;
   letter-spacing: 0.6px;
@@ -436,7 +436,7 @@ banner slider css
   position: absolute;
   right: 0;
   top: 0;
-  background:rgba(209, 157, 100, 1);
+  background:rgba(40, 38, 37, 1);
   padding-bottom:20px;
 }
 
@@ -2006,6 +2006,11 @@ Appointment
     display: flex;
     justify-content: space-between;
 	color: black;
+}
+
+.hours-list span {
+	font-weight: bold;
+	font-size: 18px;
 }
 
 .day-different {
