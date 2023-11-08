@@ -2026,6 +2026,14 @@ Appointment
 	color: black;
 }
 
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+	.platinado {
+		height: 214px;
+	}
+}
+
 
 /*-----------------------------------------------------------------------------------
 
