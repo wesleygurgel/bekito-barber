@@ -448,7 +448,18 @@ banner slider css
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+
+  /* Media query para telas menores na vertical (entre 800px e 420px) */
+  @media (max-height: 800px) and (min-height: 500px) {
+    height: 150vh; /* Altura diferente para telas mais curtas na vertical */
+  }
+
+  /* Media query para telas muito curtas na vertical (menos de 400px) */
+  @media (max-height: 500px) {
+    height: 200vh; /* Altura diferente para telas muito curtas na vertical */
+  }
 }
+
 .banner-slider .banner-text {
   left: 0;
   margin: 0 auto;
