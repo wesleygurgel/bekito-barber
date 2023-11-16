@@ -232,7 +232,7 @@
 			
 			$(".se-pre-con").fadeOut("slow");
 			$('#banner-slide-show').smoothSlides({
-				effectDuration: 60000,
+				effectDuration: 6000,
 				effectModifier: 1.4,
 				pagination:'false',
 				matchImageSize:'false',
