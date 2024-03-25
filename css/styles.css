@@ -1,47 +1,5 @@
 /*-----------------------------------------------------------------------------------
 
- [Table of contents]
-
- 1. Base (Global style for some elements)
- 2. Banner section (Logo, Navigation and Video Banner Section)
- 3. About us (Section)
- 4. Service (Section)
- 5. Statistics (Section)
- 6. Testimonial (Section)
- 7. Our Team (Section)
- 8. Our Pricing (Section)
- 9. Discount / Offer Banner (Section)
- 10. Appointment Form (Section)
- 11. Photo Gallery (Section)
- 12. Join / Member (Section)
- 13. Latest News (Section)
- 14. Contact Us (Section)
- 15. Footer (Section)
-
------------------------------------------------------------------------------------*/
-/*-----------------------------------------------------------------------------------
-
- [Global CSS for some elements]
-
- # html
- # body
- # a tag
- # responsive images
- # input placeholders
- # i tag for font awesome icons
- # paragraph
- # hr tag for horizontal line
- # white section
- # dark section
- # align center (class)
- # bootstrap fluid container
- # theme button
- # swiper (carousel slider)
-
------------------------------------------------------------------------------------*/
-
-/*-----------------------------------------------------------------------------------
-
 Basic CSS
 
 -----------------------------------------------------------------------------------*/
@@ -101,8 +59,8 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     overflow-x: hidden;
-    -webkit-font-smoothing: antialiased; /* This needs to be set or some font faced fonts look bold on Mac in Chrome/Webkit based browsers. */
-    -moz-osx-font-smoothing: grayscale; /* Fixes font bold issue in Firefox version 25+ on Mac */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
