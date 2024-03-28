@@ -213,7 +213,6 @@ p {
 banner section
 
 -----------------------------------------------------------------------------------*/
-
 .banner-section {
     background: url("../images/banner-01.jpg") no-repeat top center;
     height: 100vh;
@@ -475,6 +474,7 @@ banner slider css
     font-family: 'Oswald', sans-serif;
     border: none; /* Remove a borda padrão do botão */
     cursor: pointer; /* Cursor de clique */
+	text-align: center;
 }
 
 .slider-more-btn {
@@ -1001,12 +1001,12 @@ service slider
 }
 
 .service-wrapper .slick-prev, .slick-prev {
-	background: #ffffff url("../images/banner-arrow-left.png") no-repeat center center;
+	background: #ffffff url("../images/banner-arrow-left.webp") no-repeat center center;
 	left: -60px;
 }
 
 .service-wrapper .slick-next, .slick-next {
-	background: #ffffff url("../images/banner-arrow-right.png") no-repeat center center;
+	background: #ffffff url("../images/banner-arrow-right.webp") no-repeat center center;
 	right: -60px;
 }
 
@@ -1106,7 +1106,7 @@ Testimonial
 -----------------------------------------------------------------------------------*/
 
 .client-testimonial {
-	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/depoimento-banner.jpg) top center no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/depoimento-banner.webp) top center no-repeat;
 	background-size: cover;
 	padding-top: 100px;
 	padding-bottom: 115px;
@@ -1596,7 +1596,7 @@ Box Style pricing
 -----------------------------------------------------------------------------------*/
 
 .our-pricing {
-	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/our-pricing-2.jpg") no-repeat top center;
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/our-pricing-2.webp") no-repeat top center;
 	background-size: cover;
 	padding-top: 107px;
 	padding-bottom: 107px;

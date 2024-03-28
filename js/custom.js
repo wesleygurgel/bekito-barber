@@ -258,3 +258,30 @@
 
 
 })(jQuery);
+
+document.addEventListener("DOMContentLoaded", function() {
+  var lazyImages = [].slice.call(document.querySelectorAll(".banner-slider-item-img"));
+
+  if ("IntersectionObserver" in window) {
+    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          let lazyImage = entry.target;
+          let bgImage = lazyImage.getAttribute("data-bg");
+          lazyImage.style.backgroundImage = `linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${bgImage})`;
+          lazyImageObserver.unobserve(lazyImage);
+        }
+      });
+    });
+
+    lazyImages.forEach(function(lazyImage) {
+      lazyImageObserver.observe(lazyImage);
+    });
+  } else {
+    // Carrega todas as imagens imediatamente para navegadores que não suportam IntersectionObserver
+    lazyImages.forEach(function(lazyImage) {
+      let bgImage = lazyImage.getAttribute("data-bg");
+      lazyImage.style.backgroundImage = `linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${bgImage})`;
+    });
+  }
+});
