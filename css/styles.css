@@ -500,6 +500,10 @@ banner slider css
     transform: scale(1.05); /* Leve aumento ao passar o mouse para dar feedback */
 }
 
+.sections-button {
+	margin-top: 0px !important;
+}
+
 /* Ajustes para dispositivos móveis */
 @media (max-width: 768px) {
     .banner-buttons {
@@ -507,6 +511,10 @@ banner slider css
 		align-items: center; /* Adiciona alinhamento central para itens */
 		gap: 5px;
     }
+
+	.sections-button {
+		margin-top: 40px !important;
+	}
 }
 
 /*-----------------------------------------------------------------------------------
@@ -517,7 +525,7 @@ About us
 
 .experience-section {
 	background: #FFFFFF;
-	padding-bottom:110px;
+	padding-bottom:65px;
 }
 
 .brush-image-big {
@@ -2074,7 +2082,7 @@ Photo Gallery
 .our-gallery {
 	background: #eaeff2;
 	padding-top: 105px;
-	padding-bottom: 105px;
+	padding-bottom: 55px;
 	position: relative;
 }
 
