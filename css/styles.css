@@ -367,7 +367,7 @@ banner slider css
 	background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
-    height: auto;
+    height: 100vh;
 }
 
 .banner-slider-item .much-img img, .banner-slider-item .logo img {
@@ -428,25 +428,86 @@ banner slider css
   -webkit-transform: translateY(-50%);
 }
 
-.slider-more-btn
-{
-	display: block;
-	background: #d19d64;
-	text-transform: uppercase;
-	text-decoration: none;
-	color: #000000;
-	font-weight: 700;
-	text-align: center;
-	font-size: 13px;
-	letter-spacing:1px;
-	line-height: 45px;
-	max-width: 200px;
-	width: 100%;
-	height: 45px;
-	margin:0 auto;
-	font-family: 'Oswald', sans-serif;
+
+.banner-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre os botões */
+	flex-wrap: wrap;
+	margin-top: 60px;
 }
 
+.slider-more-btn i.icofont {
+    font-size: 24px; /* Ajusta o tamanho do ícone */
+    background-color: #fff; /* Cor de fundo do ícone */
+    border-radius: 50%; /* Arredonda as bordas do fundo */
+    width: auto; /* Largura do ícone com fundo */
+    height: auto; /* Altura do ícone com fundo */
+    display: inline-flex; /* Permite o alinhamento do ícone */
+    justify-content: center; /* Centraliza o ícone horizontalmente */
+    align-items: center; /* Centraliza o ícone verticalmente */
+    margin-right: 8px; /* Espaçamento entre o ícone e o texto */
+    color: #25D366; /* Cor do ícone do WhatsApp */
+}
+
+/* Para o ícone do telefone, você pode querer uma cor diferente */
+.slider-more-btn i.icofont-phone {
+    color: #000; /* Cor do ícone do telefone, ajuste conforme necessário */
+}
+
+.slider-more-btn {
+	display: inline-flex; /* Ajuste para alinhar ícones e texto */
+    align-items: center; /* Centraliza verticalmente o ícone com o texto */
+    justify-content: center; /* Centraliza o conteúdo do botão */
+    background: #d19d64;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 1px;
+    line-height: normal;
+    height: 60;
+    max-width: 250px;
+	min-width: 250px;
+    width: 100%;
+    margin: 10px 0; /* Ajuste para margem */
+    font-family: 'Oswald', sans-serif;
+    border: none; /* Remove a borda padrão do botão */
+    cursor: pointer; /* Cursor de clique */
+}
+
+.slider-more-btn {
+    display: inline-flex; /* Mantém o layout flexível */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    background: #d19d64; /* Cor de fundo */
+    text-transform: uppercase;
+    color: #000000; /* Cor do texto */
+    font-weight: 700;
+    font-size: 16px; /* Aumenta o tamanho da fonte para dar mais destaque */
+    letter-spacing: 1px;
+    padding: 12px 24px; /* Aumenta o padding para fazer o botão maior */
+    margin: 10px 0; /* Espaçamento ao redor do botão */
+    font-family: 'Oswald', sans-serif;
+    border: none; /* Sem borda */
+    cursor: pointer; /* Estilo do cursor para indicar clicabilidade */
+    border-radius: 5px; /* Bordas levemente arredondadas para estética */
+    transition: background-color 0.3s, transform 0.3s; /* Efeito suave ao interagir */
+}
+
+.slider-more-btn:hover {
+    transform: scale(1.05); /* Leve aumento ao passar o mouse para dar feedback */
+}
+
+/* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+    .banner-buttons {
+        flex-direction: column;
+		align-items: center; /* Adiciona alinhamento central para itens */
+		gap: 5px;
+    }
+}
 
 /*-----------------------------------------------------------------------------------
 
@@ -2757,9 +2818,22 @@ mobile-menu css
 scroll to top
 
 -----------------------------------------------------------------------------------*/
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1); /* Aumenta o tamanho */
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 
 .whatsapp-button {
-    background: url("../images/whatsapp-button.png") no-repeat center center;
+    background: url("../images/whatsapp-button.png") no-repeat center center, #25D366;
+    animation: pulse 2s infinite;
+	border-radius: 50%; /* Faz o botão ficar redondo */
     bottom: 20px;
     font-size: 0;
     height: 40px;
@@ -2768,13 +2842,59 @@ scroll to top
     width: 40px;
     transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
     display: none;
-	z-index: 1000;
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .whatsapp-button:hover {
-    box-shadow: 0px 0px 15px
+    box-shadow: 0px 0px 15px;
 }
 
+.message-pending {
+    position: absolute;
+    top: -5px; /* Ajuste conforme necessário */
+    right: -5px; /* Ajuste conforme necessário */
+    background-color: red;
+    border-radius: 50%;
+    width: 20px; /* Ajuste o tamanho da bolinha */
+    height: 20px; /* Ajuste o tamanho da bolinha */
+    z-index: 1001;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Cor do texto dentro da bolinha */
+    font-size: 12px; /* Ajuste conforme o tamanho da bolinha */
+}
+
+.speech-bubble {
+    position: absolute;
+    right: 60px; /* Ajuste baseado no tamanho do botão */
+    bottom: 100%; /* Posiciona acima do botão */
+	margin-bottom: -33px;
+    background-color: white;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 14px; /* Ajuste o tamanho do texto */
+    white-space: nowrap; /* Evita a quebra de linha do texto */
+    z-index: 1002;
+    box-shadow: 0 2px 4px rgba(26, 179, 115, 0.2); /* Adiciona sombra para melhor visibilidade */
+    display: flex; /* Mantém o balão sempre visível */
+	color: black;
+}
+
+.speech-bubble::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -5px; /* Ajusta para mover a seta para fora do balão, na direção do ícone */
+    transform: translateY(-50%) rotate(45deg);
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    box-shadow: 2px -2px 2px rgba(0,0,0,0.1);
+}
 
 
 /*-----------------------------------------------------------------------------------
@@ -3493,13 +3613,19 @@ h2 {
 .banner-slider .banner-text h1 {
   font-size: 54px;
   line-height: 55px;
-  margin: 9px 0;
+  padding: 10px;
 }
+
+.banner-text {
+	margin-top: 10%;
+}
+
 .banner-slider .banner-text {
   margin: 0 auto;
   top: 50%;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
+  margin-top: 20px;
 }
 .banner-text span {
   letter-spacing: 1px;
