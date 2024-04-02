@@ -455,29 +455,6 @@ banner slider css
 }
 
 .slider-more-btn {
-	display: inline-flex; /* Ajuste para alinhar ícones e texto */
-    align-items: center; /* Centraliza verticalmente o ícone com o texto */
-    justify-content: center; /* Centraliza o conteúdo do botão */
-    background: #d19d64;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #000000;
-    font-weight: 700;
-    font-size: 10px;
-    letter-spacing: 1px;
-    line-height: normal;
-    height: 60;
-    max-width: 250px;
-	min-width: 250px;
-    width: 100%;
-    margin: 10px 0; /* Ajuste para margem */
-    font-family: 'Oswald', sans-serif;
-    border: none; /* Remove a borda padrão do botão */
-    cursor: pointer; /* Cursor de clique */
-	text-align: center;
-}
-
-.slider-more-btn {
     display: inline-flex; /* Mantém o layout flexível */
     align-items: center; /* Centraliza o conteúdo verticalmente */
     justify-content: center; /* Centraliza o conteúdo horizontalmente */
@@ -494,6 +471,10 @@ banner slider css
     cursor: pointer; /* Estilo do cursor para indicar clicabilidade */
     border-radius: 5px; /* Bordas levemente arredondadas para estética */
     transition: background-color 0.3s, transform 0.3s; /* Efeito suave ao interagir */
+}
+
+.whatsapp-agende {
+	background: #DCF8C6 !important;
 }
 
 .slider-more-btn:hover {
@@ -3641,7 +3622,14 @@ h2 {
 .banner-text p {
   margin: 0 auto 20px;
   max-width: 200px;
-}    
+}
+
+@media (max-width: 768px) {
+    /* Estilos para telas menores que 768px */
+    .banner-text span {
+        font-size: 20px; /* Tamanho menor para dispositivos móveis */
+    }
+}
 
 .price-list li {
 	width:100%;
