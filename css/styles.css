@@ -3036,7 +3036,7 @@ Responsive CSS
 }
 
 
-@media handheld, only screen and (max-width: 991px) {
+@media handheld, only screen and (max-width: 991px), only screen and (max-height: 700px) {
 .header .table-cell {
 	display: none;
 }
@@ -3059,12 +3059,12 @@ Responsive CSS
 .timing-section {
 	float:left;
 	width:100%;
-  text-align: center;
-  top: 0;
-  width: 100%;
-  margin: 0 auto;
-  background:#000000;
-  border:none;
+	text-align: center;
+	top: 0;
+	width: 100%;
+	margin: 0 auto;
+	background:#000000;
+	border:none;
 }
 
 .border-left-right {
@@ -3239,7 +3239,7 @@ Responsive CSS
     padding-left: 15px;
 }    
 .banner-text h1 {
-    font-size: 85px;
+    font-size: 65px;
 }   
 .play-btn {
   display: block;
